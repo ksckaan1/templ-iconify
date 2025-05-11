@@ -22,7 +22,7 @@ go install github.com/ksckaan1/templ-iconify@latest
 templ-iconify <icon-name> -o <output-dir>
 ```
 
-### Example:
+### CLI Examples:
 - Download `mdi:home` icon to `./icons` directory (default: `./icons`)
   ```sh
   templ-iconify "mdi:home"
@@ -53,6 +53,21 @@ templ-iconify <icon-name> -o <output-dir>
   templ-iconify "mdi:home" -o ./icons -w 20
   ```
   
+### templ Example:
+
+```templ
+package templates
+
+templ Page() {
+  @mdi.Home(mdi.HomeProps{
+    Height: "100px",
+    Width: "100px",
+    Color: "red", // default: "currentColor"
+  })
+}
+
+```
+
 ## License
 
 MIT License
