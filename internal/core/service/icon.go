@@ -33,7 +33,7 @@ func (s *IconService) FindIcons(ctx context.Context, names ...string) ([]*domain
 	for _, name := range names {
 		icon, err := s.parseIconName(name)
 		if err != nil {
-			return nil, fmt.Errorf("parseIconName: %w", err)
+			return nil, customerrors.ErrInvalidIconName
 		}
 
 		icons, err := s.generateDownloadList(ctx, icon)
