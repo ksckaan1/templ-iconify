@@ -208,7 +208,7 @@ func (s *IconService) generateComponentName(iconName string) string {
 	return result
 }
 
-var rgxSizeReplacer = regexp.MustCompile(`width="[\w]+" height="[\w]+"`)
+var rgxSizeReplacer = regexp.MustCompile(`width="[\w\.]+" height="[\w]+"`)
 
 const sizeReplacerTarget = `
 		if props.Width != "" {
