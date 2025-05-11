@@ -2,6 +2,14 @@
 
 This CLI tool download icons over `Iconify` and converts them to `templ` files.
 
+## Features
+
+- Download icons over `Iconify`
+- Convert icons to `templ` files
+- Download multiple icons
+- Download icons using wildcard
+- Offline Usage Support as Default
+
 ## Installation
 
 ```sh
@@ -40,6 +48,6 @@ templ-iconify <icon-name> -o <output-dir>
   templ-iconify "*:*" -o ./icons
   ```
   
+## License
 
-
-
+MIT License
