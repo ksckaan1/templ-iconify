@@ -58,6 +58,8 @@ templ-iconify <icon-name> -o <output-dir>
 ```templ
 package templates
 
+import "<module-name>/icons/mdi"
+
 templ Page() {
   @mdi.Home(mdi.HomeProps{
     Height: "100px",
