@@ -23,9 +23,9 @@ templ-iconify <icon-name> -o <output-dir>
 ```
 
 ### Example:
-- Download `mdi:home` icon to `./icons` directory
+- Download `mdi:home` icon to `./icons` directory (default: `./icons`)
   ```sh
-  templ-iconify "mdi:home" -o ./icons
+  templ-iconify "mdi:home"
   ```
 
 - Download icons starts with `mdi:home-` to `./icons` directory
@@ -46,6 +46,11 @@ templ-iconify <icon-name> -o <output-dir>
 - Download all icons
   ```sh
   templ-iconify "*:*" -o ./icons
+  ```
+
+- Download with custom worker count (default: 10)
+  ```sh
+  templ-iconify "mdi:home" -o ./icons -w 20
   ```
   
 ## License
